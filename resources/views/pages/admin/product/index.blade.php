@@ -26,6 +26,7 @@
                             <th>No</th>
                             <th>Nama Produk</th>
                             <th>Harga Produk</th>
+                            <th>Nama Distributor</th>
                             <th>Diskon</th>
                             <th>Stok</th>
                             <th>Harga Setelah Diskon</th>
@@ -41,6 +42,7 @@
                             <td>{{ $no += 1 }}</td>
                             <td>{{ $item->name }}</td>
                             <td>{{ $item->price }} Points</td>
+                            <td>{{ $item->nama_distributor }}</td>
                             <td>{{ $item->discount }}</td> 
                             <td>{{ $item->hargasetelahdiskon }}</td> 
                             <td>{{ $item->stock }}</td> 

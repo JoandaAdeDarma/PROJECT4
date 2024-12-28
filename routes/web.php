@@ -38,6 +38,8 @@ Route::get('/', [ListController::class, 'index']);
     Route::get('/product/edit/{id}', [ProductController::class, 'edit'])->name('product.edit');
     Route::post('/product/update/{id}', [ProductController::class, 'update'])->name('product.update');
     Route::delete('/product/delete/{id}', [ProductController::class, 'delete'])->name('product.delete');
+    Route::post('/distributor/import', [DistributorController::class, 'import'])->name('distributor.import');
+    Route::get('/distributor/export', [DistributorController::class, 'export'])->name('distributor.export');
     
        // Product Route 
     Route::get('/product', [ProductController::class, 'index'])->name('admin.product'); 
